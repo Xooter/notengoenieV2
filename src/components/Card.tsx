@@ -1,3 +1,5 @@
+import toast from "react-hot-toast";
+
 interface CardProps {
   character: string;
 }
@@ -5,6 +7,20 @@ interface CardProps {
 export const Card = ({ character }: CardProps) => {
   const CopyCharacter = () => {
     navigator.clipboard.writeText(character);
+
+    let emojis = ["✨", "❤️", "🔥", "🌟", "🎉", "🎈", "🎊", "🎀", "🌈", "🌸"];
+    let rand = Math.floor(Math.random() * emojis.length);
+
+    toast.custom((t) => (
+      <div
+        className={`${
+          t.visible ? "animate-enter" : "animate-leave"
+        } px-5 shadow-lg rounded-xl bg-[#131313] flex justify-center items-center gap-2`}
+      >
+        <a>{emojis[rand]}</a>
+        <a className="my-2">Copied to clipboard!</a>
+      </div>
+    ));
   };
 
   return (
