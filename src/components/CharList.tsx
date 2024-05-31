@@ -4,7 +4,7 @@ import { Card } from "./Card";
 export const CharList = () => {
   return (
     <div className="flex flex-col gap-2">
-      <a className="font-light text-sm ml-auto mx-10">
+      <a className="font-light text-sm ml-auto mx-5">
         <strong>Click</strong> to copy
       </a>
       <div className="flex flex-wrap items-center gap-2">
