@@ -22,3 +22,17 @@ strong,
 svg {
   @apply h-6 aspect-square dark:fill-white fill-black;
 }
+
+/* https://animista.net/play/basic/scale-down/scale-down-ver-bottom */
+.scale-down {
+  animation: fallback 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) both;
+}
+
+@keyframes fallback {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

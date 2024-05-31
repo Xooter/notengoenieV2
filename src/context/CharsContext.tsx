@@ -22,6 +22,15 @@ export const CharsContext = ({ children }: { children: React.ReactNode }) => {
     } else {
       setCurrentType(Type.Home);
     }
+
+    ResetAnimationFallback();
+  };
+
+  const ResetAnimationFallback = () => {
+    document.getAnimations().forEach((anim) => {
+      anim.cancel();
+      anim.play();
+    });
   };
 
   const GetType = (): Type => {
