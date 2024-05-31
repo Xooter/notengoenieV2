@@ -1,4 +1,5 @@
 import { ThemeButton } from "../ui/ThemeButton/ThemeButton";
+import { TypeButton } from "../ui/TypeButton/TypeButton";
 
 export const Header = () => {
   return (
@@ -19,7 +20,10 @@ export const Header = () => {
         </h1>
       </div>
 
-      <ThemeButton />
+      <div className="flex ml-auto gap-2">
+        <TypeButton />
+        <ThemeButton />
+      </div>
     </div>
   );
 };
