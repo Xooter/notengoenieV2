@@ -15,7 +15,7 @@ export const Card = ({ character }: CardProps) => {
       <div
         className={`${
           t.visible ? "animate-enter" : "animate-leave"
-        } px-5 shadow-lg rounded-xl bg-[#131313] flex justify-center items-center gap-2`}
+        } px-5 shadow-lg rounded-xl dark:bg-[#131313] bg-background flex justify-center items-center gap-2`}
       >
         <a>{emojis[rand]}</a>
         <a className="my-2">Copied to clipboard!</a>
