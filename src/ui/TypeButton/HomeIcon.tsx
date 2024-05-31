@@ -6,8 +6,8 @@ export const HomeIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="fill-primary-dark dark:fill-primary"
     >
-      <g stroke-width="0"></g>
-      <g stroke-linecap="round" stroke-linejoin="round"></g>
+      <g strokeWidth="0"></g>
+      <g strokeLinecap="round" strokeLinejoin="round"></g>
       <g>
         <path
           opacity="0.5"
