@@ -3,7 +3,7 @@ import { TypeButton } from "../ui/TypeButton/TypeButton";
 
 export const Header = () => {
   return (
-    <div className="flex gap-20 justify-between items-center mx-5">
+    <div className="flex gap-2 sm:gap-20 justify-between items-center mx-5 flex-col sm:flex-row">
       <div className="flex flex-col">
         <svg
           className="fill-primary-dark dark:fill-primary ml-auto -mb-2 h-4 mr-[1px] aspect-square"
@@ -20,7 +20,7 @@ export const Header = () => {
         </h1>
       </div>
 
-      <div className="flex ml-auto gap-2">
+      <div className="flex sm:ml-auto gap-2">
         <TypeButton />
         <ThemeButton />
       </div>
