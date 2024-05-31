@@ -3,9 +3,19 @@ interface CardProps {
 }
 
 export const Card = ({ character }: CardProps) => {
+  const CopyCharacter = () => {
+    navigator.clipboard.writeText(character);
+  };
+
   return (
-    <div className="bg-primary dark:bg-primary-dark h-10 rounded-lg  aspect-square flex justify-center items-center">
-      <a>{character}</a>
+    <div
+      onClick={CopyCharacter}
+      className="bg-primary dark:bg-primary-dark
+      transition-transform ease-in-out
+      hover:-translate-y-1 hover:cursor-pointer
+      h-10 aspect-square rounded-lg flex justify-center items-center"
+    >
+      <a className="font-bold">{character}</a>
     </div>
   );
 };
