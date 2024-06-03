@@ -34,7 +34,7 @@ export const Card = ({ character, favorite = false }: CardProps) => {
       onClick={CopyCharacter}
       className={` 
       ${favorite ? "rounded-full bg-background-dark dark:bg-background" : "rounded-lg bg-primary dark:bg-primary-dark"}
-      ${favorite ? "text-primary dark:text-primary-dark shadow-md" : ""}
+      ${favorite ? "text-primary dark:text-primary-dark shadow-md scale-up-center" : ""}
       transition-transform ease-in-out
       hover:-translate-y-1 hover:cursor-pointer
       h-10 aspect-square  flex justify-center items-center`}
